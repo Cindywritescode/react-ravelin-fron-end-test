@@ -33,8 +33,11 @@ const Summary = styled.div`
   color: white;
   width: 613px;
   height: 190px;
+  margin-top: 5rem;
 
   & p {
+    font-size: 15px;
+    line-height: 1.2rem;
     width: 548px;
   }
 `;

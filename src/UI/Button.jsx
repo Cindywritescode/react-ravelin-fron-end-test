@@ -13,4 +13,10 @@ const ButtonPrimary = styled.button`
   background: #1F9BF4;
   border-radius: 5px;
   padding: 14px 34px;
+  
+  &:hover  {
+    background: white;
+    color: #2A4AFC;
+    border: 1px solid #2A4AFC;
+  }
 `

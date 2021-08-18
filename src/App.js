@@ -1,4 +1,3 @@
-import './App.css';
 import { HeroSection } from './components/HeroSection';
 import { ClientRollSection } from './components/ClientRollSection';
 import { SolutionSection } from './components/SolutionSection';
@@ -16,7 +15,7 @@ function App() {
 
 const Container = styled.div`
   width: 1180px;
-  margin: 0 auto;
+  margin: 38px auto;
 `
 
 export default App;
