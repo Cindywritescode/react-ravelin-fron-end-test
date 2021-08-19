@@ -20,5 +20,7 @@ export const Box = styled.div`
   padding: ${props => props.pad ? gutterMap[props.pad] : 'initial'};
   flex-basis: ${props => props.basis ? `${computeBasis(props.basis)}%` : 'auto'};
   flex-direction: ${props => props.direction || 'row'};
+  flex-wrap: ${props => (props.wrap && 'wrap') || (props.nowrap && 'nowrap') || 'initial'};
   justify-content: ${props => justifyMap[props.justify] || 'auto' };
+  align-items: ${props => props.align || 'initial'};
 `

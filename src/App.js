@@ -4,12 +4,18 @@ import { SolutionSection } from './components/SolutionSection';
 import styled from 'styled-components';
 import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
+import { Carousel } from './UI/Carousel';
 
 function App() {
   return (
     <div>
       <Nav/>
       <HeroSection/>
+      <Carousel>
+        <h1>Test 1</h1>
+        <h1>Abracadabra</h1>
+        <h1>Magic</h1>
+      </Carousel>
       <Container>
         <ClientRollSection/>
         <SolutionSection/>

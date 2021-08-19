@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Box } from '../UI/Box';
 
 export const ClientRollSection = () => (
   <ClientRoll>
@@ -26,9 +27,9 @@ const ClientRoll = styled.div`
 const ClientGallery = ({
   urls
 }) => (
-  <ClientGalleryRow>
+  <Box wrap justify='between' align='baseline'>
     {urls.map(path => <ClientGalleryImg url={path}/>)}
-  </ClientGalleryRow>
+  </Box>
 );
 
 const ClientGalleryImg = ({
@@ -41,8 +42,8 @@ const ClientGalleryImg = ({
 );
 
 const ClientGalleryRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
+  //align-items: baseline;
 `;
