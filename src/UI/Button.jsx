@@ -6,8 +6,7 @@ export const Button = () => (
 
 const ButtonPrimary = styled.button`
   color: white;
-  font-size: 15px;
-  font-family: "SF Mono";
+  font-size: 0.7rem;
   border: none;
   line-height: 152%;
   background: #1F9BF4;
