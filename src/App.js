@@ -3,6 +3,7 @@ import { ClientRollSection } from './components/ClientRollSection';
 import { SolutionSection } from './components/SolutionSection';
 import styled from 'styled-components';
 import { Nav } from './components/Nav';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -13,11 +14,9 @@ function App() {
         <ClientRollSection/>
         <SolutionSection/>
       </Container>
-      {/*<Footer />*/}
-
-
       <BackgroundImg/>
       <ProductImg/>
+      <Footer/>
     </div>
   );
 }

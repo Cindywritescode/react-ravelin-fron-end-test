@@ -56,6 +56,7 @@ const cards = [
 const SolutionGridSection = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 
   & h2 {
     text-align: center;

@@ -15,6 +15,13 @@ export const ClientRollSection = () => (
   </ClientRoll>
 );
 
+const ClientRoll = styled.div`
+  margin: 10rem 0 5rem 0;
+  & p {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+`;
 
 const ClientGallery = ({
   urls
@@ -32,14 +39,6 @@ const ClientGalleryImg = ({
     <img src={url} alt={title}/>
   </div>
 );
-
-const ClientRoll = styled.div`
-  margin: 10rem 0 5rem 0;
-  & p {
-    margin-bottom: 2.5rem;
-    text-align: center;
-  }
-`;
 
 const ClientGalleryRow = styled.div`
   display: flex;
