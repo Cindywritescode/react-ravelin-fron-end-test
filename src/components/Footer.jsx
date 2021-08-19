@@ -22,31 +22,11 @@ export const Footer = () => (
 
 const FooterBlock = styled.footer`
   background: #e4e4e4;
-  //display: flex;
-  //flex-grow: 1;
-  //flex-direction: column;
-  //align-items: center;
-  //padding: 2rem 5rem;
   color: #8E9097;
-
-  //& div {
-  //  display: flex;
-  //}
-  //
-  //& > div {
-  //  border: 1px solid black;
-  //  flex-basis: 50%;
-  //  flex-direction: row;
-  //  justify-content: space-around;
-  //}
 
   & p {
     font-size: x-small;
     margin-bottom: 0;
     text-align: center;
   }
-
-  //& svg {
-  //  padding: 0 1rem;
-  //}
 `;
