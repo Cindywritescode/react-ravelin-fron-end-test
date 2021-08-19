@@ -33,7 +33,7 @@ const HeroContainer = styled.header`
 
 export const BackgroundImg = () => (
   <HeroBgImgCol>
-    <img src="/images/graph-viz.png" alt="product image" width="60%"/>
+    <img src="./images/graph-viz.png" alt="product image" width="60%"/>
   </HeroBgImgCol>
 );
 
@@ -66,7 +66,7 @@ const HeroBgImgCol = styled.div`
 
 export const ProductImg = () => (
   <ProductImgStyle>
-    <img src="/images/product-fragments.png" alt="product image" width="620px"/>
+    <img src="./images/product-fragments.png" alt="product image" width="620px"/>
   </ProductImgStyle>
 );
 

@@ -8,12 +8,12 @@ export const ClientRollSection = () => (
     <p>The world's leading online business trust Ravelin to manage risk</p>
 
     <ClientGallery urls={[
-      '/images/clients/just-eat.svg',
-      '/images/clients/boohoo.svg',
-      '/images/clients/glovo.svg',
-      '/images/clients/booking.com.svg',
-      '/images/clients/deliveroo.svg',
-      '/images/clients/freenow.svg',
+      './images/clients/just-eat.svg',
+      './images/clients/boohoo.svg',
+      './images/clients/glovo.svg',
+      './images/clients/booking.com.svg',
+      './images/clients/deliveroo.svg',
+      './images/clients/freenow.svg',
     ]}/>
   </ClientRoll>
 );
