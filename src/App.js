@@ -5,12 +5,16 @@ import styled from 'styled-components';
 import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
 import { Carousel } from './UI/Carousel';
+import { Box } from './UI/Box';
 
 function App() {
   return (
     <div>
       <Nav/>
       <HeroSection/>
+      <Box hideOnScreen='medium'>
+        Simple
+      </Box>
       <Carousel>
         <h1>Test 1</h1>
         <h1>Abracadabra</h1>

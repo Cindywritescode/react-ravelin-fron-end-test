@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Box } from '../UI/Box';
+import { Carousel } from '../UI/Carousel';
+import { Grid } from '../UI/Grid';
 
 export const ClientRollSection = () => (
   <ClientRoll>
@@ -18,6 +20,7 @@ export const ClientRollSection = () => (
 
 const ClientRoll = styled.div`
   margin: 10rem 0 5rem 0;
+
   & p {
     margin-bottom: 2.5rem;
     text-align: center;
@@ -26,11 +29,20 @@ const ClientRoll = styled.div`
 
 const ClientGallery = ({
   urls
-}) => (
-  <Box wrap justify='between' align='baseline'>
-    {urls.map(path => <ClientGalleryImg url={path}/>)}
-  </Box>
-);
+}) => {
+  return [
+    <Box justify="center" hideOnScreen="small">
+      <Grid gap='medium' cols={6} largeCols={3} mediumCols={2}>
+      {urls.map(path => <ClientGalleryImg url={path}/>)}
+      </Grid>
+    </Box>,
+    <Box justify="center" showOnScreen="small">
+      <Carousel>
+        {urls.map(path => <ClientGalleryImg url={path}/>)}
+      </Carousel>
+    </Box>
+  ];
+};
 
 const ClientGalleryImg = ({
   url,

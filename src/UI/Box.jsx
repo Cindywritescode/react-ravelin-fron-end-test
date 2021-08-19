@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { screenSize } from './config';
 
 const justifyMap = {
   between: 'space-between',
@@ -23,4 +24,19 @@ export const Box = styled.div`
   flex-wrap: ${props => (props.wrap && 'wrap') || (props.nowrap && 'nowrap') || 'initial'};
   justify-content: ${props => justifyMap[props.justify] || 'auto' };
   align-items: ${props => props.align || 'initial'};
+  
+  ${props => props.hideOnScreen && hideMediaQuery}
+  ${props => props.showOnScreen && showMediaQuery}
+`
+
+const hideMediaQuery = css`
+  @media (max-width: ${props => screenSize[props.hideOnScreen]}) {
+    display: none;
+  }
+`
+
+const showMediaQuery = css`
+  @media (min-width: ${props => screenSize[props.showOnScreen]}) {
+    display: none;
+  }
 `
