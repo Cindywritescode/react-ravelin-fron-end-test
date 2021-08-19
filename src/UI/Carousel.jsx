@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export const Carousel = ({
   children,
-  timeout = 5000
+  timeout = 3000
 }) => {
   const [index, setIndex] = useState(0)
   const selected = children[index]

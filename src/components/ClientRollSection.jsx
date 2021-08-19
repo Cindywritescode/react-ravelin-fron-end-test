@@ -52,10 +52,3 @@ const ClientGalleryImg = ({
     <img src={url} alt={title}/>
   </div>
 );
-
-const ClientGalleryRow = styled.div`
-  //display: flex;
-  //flex-wrap: wrap;
-  //justify-content: space-between;
-  //align-items: baseline;
-`;

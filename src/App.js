@@ -12,14 +12,6 @@ function App() {
     <div>
       <Nav/>
       <HeroSection/>
-      <Box hideOnScreen='medium'>
-        Simple
-      </Box>
-      <Carousel>
-        <h1>Test 1</h1>
-        <h1>Abracadabra</h1>
-        <h1>Magic</h1>
-      </Carousel>
       <Container>
         <ClientRollSection/>
         <SolutionSection/>
