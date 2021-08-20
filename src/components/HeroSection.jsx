@@ -21,7 +21,7 @@ export const HeroSection = () => (
 
 export const Summary = styled.div`
   color: white;
-  width: 50vw;
+  width: 40vw;
   padding: 3em 0;
 
   & p {
