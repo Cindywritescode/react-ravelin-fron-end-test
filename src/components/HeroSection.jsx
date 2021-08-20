@@ -16,7 +16,7 @@ export const HeroSection = () => (
   </HeroContainer>
 );
 
-const Summary = styled.div`
+export const Summary = styled.div`
   color: white;
   margin-top: 5rem;
 

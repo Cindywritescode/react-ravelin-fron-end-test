@@ -1,23 +1,35 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { BackgroundImg, HeroSection, ProductImg } from './components/HeroSection';
+import styled from 'styled-components';
 import { ClientRollSection } from './components/ClientRollSection';
 import { SolutionSection } from './components/SolutionSection';
 import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
 import { container } from './styles/common';
+import { Hero } from './components/NewHeroIdea';
+import { Button } from './UI/Button';
+import { Summary } from './components/HeroSection';
 
 function App() {
   return (
     <Wrapper>
-      <Nav/>
-      <HeroSection/>
+      <Hero>
+        <Nav/>
+        <Container>
+          <Summary>
+            <h1>Make smarter decision</h1>
+            <p>Ravelin provides technology and support to help you prevent evolving fraud threats and accept payments
+              with confidence.</p>
+            <Button/>
+          </Summary>
+        </Container>
+      </Hero>
+      {/*<HeroSection/>*/}
       <Container>
         <ClientRollSection/>
         <SolutionSection/>
       </Container>
-      <BackgroundImg/>
-      <ProductImg/>
+      {/*<BackgroundImg/>*/}
+      {/*<ProductImg/>*/}
       <Footer/>
     </Wrapper>
   );
