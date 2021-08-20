@@ -33,7 +33,7 @@ export const Summary = styled.div`
     width: 60vw;
   }
   @media (max-width: 780px) {
-    width: 90vw;
+    width: 85vw;
   }
 `;
 
