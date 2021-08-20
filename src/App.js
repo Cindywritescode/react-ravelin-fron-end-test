@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { BackgroundImg, HeroSection, ProductImg } from './components/HeroSection';
 import { ClientRollSection } from './components/ClientRollSection';
 import { SolutionSection } from './components/SolutionSection';
 import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
+import { container } from './styles/common';
 
 function App() {
   return (
@@ -29,12 +30,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.section`
-  max-width: 1180px;
-  margin: 0 auto;
-
-  @media (max-width: 1180px) {
-    padding: 0 1em;
-  }
+  ${container}
 `;
 
 export default App;

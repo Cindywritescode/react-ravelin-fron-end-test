@@ -19,7 +19,7 @@ export const ClientRollSection = () => (
 );
 
 const ClientRoll = styled.div`
-  margin: 10em 0 5em 0;
+  margin: 0 0 5em 0;
 
   & p {
     margin-bottom: 2.5em;

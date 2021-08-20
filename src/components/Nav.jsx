@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Logo } from '../svg/Logo';
+import { container } from '../styles/common';
 
 export const Nav = () => (
   <NavBar>
@@ -57,6 +58,8 @@ const MenuItem = ({
 
 
 const NavBar = styled.nav`
+  ${container};
+  
   font-size: 1em;
   display: flex;
   align-items: center;
@@ -64,8 +67,9 @@ const NavBar = styled.nav`
   margin-top: 2rem;
 
   @media (max-width: 780px) {
+    height: 15vh;
     margin: 0;
-    padding: 1em;
+    padding: 0 1em;
     background-color: white;
     justify-content: space-between;
   }

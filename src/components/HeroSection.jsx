@@ -28,7 +28,7 @@ const Summary = styled.div`
 `;
 
 const HeroContainer = styled.header`
-  height: 12rem;
+  height: 50vh;
 `;
 
 export const BackgroundImg = () => (
@@ -60,7 +60,9 @@ const HeroBgImgCol = styled.div`
 
   @media (max-width: 1180px) {
     transform: rotate(0deg);
-    height: 800px;
+    top: 0;
+    left: 0;
+    height: 65vh;
   }
 `;
 
