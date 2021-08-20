@@ -1,0 +1,1 @@
+export const path = (src) => `${process.env.PUBLIC_URL}/${src}`

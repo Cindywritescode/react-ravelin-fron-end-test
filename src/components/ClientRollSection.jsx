@@ -2,18 +2,19 @@ import styled from 'styled-components';
 import { Box } from '../UI/Box';
 import { Carousel } from '../UI/Carousel';
 import { Grid } from '../UI/Grid';
+import { path } from '../helpers/path';
 
 export const ClientRollSection = () => (
   <ClientRoll>
     <p>The world's leading online business trust Ravelin to manage risk</p>
 
     <ClientGallery urls={[
-      './images/clients/just-eat.svg',
-      './images/clients/boohoo.svg',
-      './images/clients/glovo.svg',
-      './images/clients/booking.com.svg',
-      './images/clients/deliveroo.svg',
-      './images/clients/freenow.svg',
+      path('images/clients/just-eat.svg'),
+      path('images/clients/boohoo.svg'),
+      path('images/clients/glovo.svg'),
+      path('images/clients/booking.com.svg'),
+      path('images/clients/deliveroo.svg'),
+      path('images/clients/freenow.svg')
     ]}/>
   </ClientRoll>
 );
@@ -32,8 +33,8 @@ const ClientGallery = ({
 }) => {
   return [
     <Box justify="center" hideOnScreen="small">
-      <Grid gap='medium' cols={6} largeCols={3} mediumCols={2}>
-      {urls.map(path => <ClientGalleryImg url={path}/>)}
+      <Grid gap="medium" cols={6} largeCols={3} mediumCols={2}>
+        {urls.map(path => <ClientGalleryImg url={path}/>)}
       </Grid>
     </Box>,
     <Box justify="center" showOnScreen="small">

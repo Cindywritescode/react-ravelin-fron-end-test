@@ -63,15 +63,18 @@ const NavBar = styled.nav`
   font-size: 1em;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  height: 12vh;
+  //padding: 1rem 0;
+  //margin-top: 0;
 
   @media (max-width: 780px) {
-    height: 15vh;
+    height: 12vh;
+    width: 100vw;
     margin: 0;
     padding: 0 1em;
     background-color: white;
     justify-content: space-between;
+    position: fixed;
   }
 `;
 
