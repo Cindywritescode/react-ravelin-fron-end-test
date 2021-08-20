@@ -6,8 +6,12 @@ import { path } from '../helpers/path';
 
 export const ClientRollSection = () => (
   <ClientRoll>
-    <p>The world's leading online business trust Ravelin to manage risk</p>
-
+    <Box justify="center" hideOnScreen="small">
+      <p>The world's leading online business trust Ravelin to manage risk</p>
+    </Box>
+    <Box justify="center" showOnScreen="small">
+      <p>Trusted by</p>
+    </Box>
     <ClientGallery urls={[
       path('images/clients/just-eat.svg'),
       path('images/clients/boohoo.svg'),
