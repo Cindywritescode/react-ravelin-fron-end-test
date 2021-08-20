@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-ravelin-fron-end-test/static/css/main.886de137.chunk.css",
-    "main.js": "/react-ravelin-fron-end-test/static/js/main.5a02fde4.chunk.js",
-    "main.js.map": "/react-ravelin-fron-end-test/static/js/main.5a02fde4.chunk.js.map",
+    "main.js": "/react-ravelin-fron-end-test/static/js/main.f51e1df9.chunk.js",
+    "main.js.map": "/react-ravelin-fron-end-test/static/js/main.f51e1df9.chunk.js.map",
     "runtime-main.js": "/react-ravelin-fron-end-test/static/js/runtime-main.e1ca0673.js",
     "runtime-main.js.map": "/react-ravelin-fron-end-test/static/js/runtime-main.e1ca0673.js.map",
     "static/js/2.32faf627.chunk.js": "/react-ravelin-fron-end-test/static/js/2.32faf627.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e1ca0673.js",
     "static/js/2.32faf627.chunk.js",
     "static/css/main.886de137.chunk.css",
-    "static/js/main.5a02fde4.chunk.js"
+    "static/js/main.f51e1df9.chunk.js"
   ]
 }
