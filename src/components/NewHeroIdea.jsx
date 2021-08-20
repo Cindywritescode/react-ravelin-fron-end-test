@@ -8,7 +8,7 @@ export const Hero = ({
     {children}
     <HeroTriangle/>
     <HeroBackgroundImage src={path('/images/graph-viz.png')}/>
-    {/*<HeroProductImage src={path('images/product-fragments.png')}/>*/}
+    <HeroProductImage src={path('images/product-fragments.png')}/>
   </HeroContainer>
 );
 
@@ -45,4 +45,8 @@ const HeroProductImage = styled.img`
   top: 0;
   right: -6vw;
   transform: rotate(-15deg);
+  
+  @media(max-width: 1180px) {
+    display: none;
+  }
 `;

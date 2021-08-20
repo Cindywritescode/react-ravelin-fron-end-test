@@ -64,17 +64,14 @@ const NavBar = styled.nav`
   display: flex;
   align-items: center;
   height: 12vh;
-  //padding: 1rem 0;
-  //margin-top: 0;
 
   @media (max-width: 780px) {
-    height: 12vh;
-    width: 100vw;
+    //width: 100vw;
     margin: 0;
     padding: 0 1em;
     background-color: white;
     justify-content: space-between;
-    position: fixed;
+    //position: sticky;
   }
 `;
 
