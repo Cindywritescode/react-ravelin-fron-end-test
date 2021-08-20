@@ -1,22 +1,18 @@
 body {
-  font-family: "SF Mono";
-  width: 100vw;
-  overflow-x: hidden;
+  font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'Segoe UI', 'Roboto', 'Oxygen',*/
-  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-  /*  sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "SF Mono";
-  /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
-  /*  monospace;*/
+  font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+  font-size: 1rem;
 }
 
 button {
-  font-family: "SF Mono";
+  font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+  font-size: 1rem;
 }

@@ -21,8 +21,8 @@ const Summary = styled.div`
   margin-top: 5rem;
 
   & p {
-    font-size: 15px;
-    line-height: 1.2rem;
+    font-size: 1em;
+    line-height: 1.5em;
     width: 548px;
   }
 `;

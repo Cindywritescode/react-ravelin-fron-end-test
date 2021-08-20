@@ -6,9 +6,9 @@ export const Button = () => (
 
 const ButtonPrimary = styled.button`
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.8em;
   border: none;
-  line-height: 152%;
+  line-height: 1.5em;
   background: #1F9BF4;
   border-radius: 5px;
   padding: 14px 34px;

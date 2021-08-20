@@ -57,7 +57,7 @@ const MenuItem = ({
 
 
 const NavBar = styled.nav`
-  font-size: 14px;
+  font-size: 1em;
   display: flex;
   align-items: center;
   padding: 1rem 0;

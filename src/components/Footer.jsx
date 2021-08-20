@@ -25,7 +25,7 @@ const FooterBlock = styled.footer`
   color: #8E9097;
 
   & p {
-    font-size: x-small;
+    font-size: 0.8em;
     margin-bottom: 0;
     text-align: center;
   }

@@ -19,10 +19,10 @@ export const ClientRollSection = () => (
 );
 
 const ClientRoll = styled.div`
-  margin: 10rem 0 5rem 0;
+  margin: 10em 0 5em 0;
 
   & p {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.5em;
     text-align: center;
   }
 `;
