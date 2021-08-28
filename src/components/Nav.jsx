@@ -37,6 +37,13 @@ const Menu = styled.div`
   
 `;
 
+const MenuItem = ({
+  title,
+  url
+}) => (
+  <a href={url}>{title}</a>
+)
+
 const HamburgerMenu = styled.div`
   @media (min-width: 780px) {
     display: none;
@@ -49,29 +56,19 @@ const HamburgerMenuIcon = () => (
   </svg>
 )
 
-const MenuItem = ({
-  title,
-  url
-}) => (
-  <a href={url}>{title}</a>
-)
-
-
 const NavBar = styled.nav`
   ${container};
   
   font-size: 1em;
   display: flex;
   align-items: center;
-  height: 12vh;
+  height: 15vh;
 
   @media (max-width: 780px) {
-    //width: 100vw;
     margin: 0;
     padding: 0 1em;
     background-color: white;
     justify-content: space-between;
-    //position: sticky;
   }
 `;
 

@@ -3,18 +3,24 @@ import { path } from '../helpers/path';
 
 export const Hero = ({
   children
-}) => (
+}) => [
   <HeroContainer>
-    {children}
     <HeroTriangle/>
-    <HeroBackgroundImage src={path('/images/graph-viz.png')}/>
     <HeroProductImage src={path('images/product-fragments.png')}/>
-  </HeroContainer>
-);
+    <HeroBackgroundImage src={path('/images/graph-viz.png')}/>
+  </HeroContainer>,
+  <HeroContent>
+    {children}
+  </HeroContent>
+];
 
 const HeroContainer = styled.div`
-  position: relative;
-  padding-bottom: 25vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
   overflow: hidden;
   background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
 `;
@@ -30,7 +36,12 @@ const HeroTriangle = styled.div`
   background-color: white;
 `;
 
+const HeroContent = styled.div`
+  height: 80vh;
+`;
+
 const HeroBackgroundImage = styled.img`
+  z-index: 0;
   height: 75vh;
   position: absolute;
   top: 0;
@@ -45,8 +56,8 @@ const HeroProductImage = styled.img`
   top: 0;
   right: -6vw;
   transform: rotate(-15deg);
-  
-  @media(max-width: 1180px) {
+
+  @media (max-width: 1180px) {
     display: none;
   }
 `;

@@ -7,7 +7,6 @@ import { Footer } from './components/Footer';
 import { container } from './styles/common';
 import { Hero } from './components/NewHeroIdea';
 import { Button } from './UI/Button';
-import { Summary } from './components/HeroSection';
 
 function App() {
   return (
@@ -23,13 +22,10 @@ function App() {
           </Summary>
         </Container>
       </Hero>
-      {/*<HeroSection/>*/}
       <Container>
         <ClientRollSection/>
         <SolutionSection/>
       </Container>
-      {/*<BackgroundImg/>*/}
-      {/*<ProductImg/>*/}
       <Footer/>
     </Wrapper>
   );
@@ -43,6 +39,24 @@ export const Wrapper = styled.div`
 
 export const Container = styled.section`
   ${container}
+`;
+
+export const Summary = styled.div`
+  color: white;
+  width: 40vw;
+  padding: 3em 0;
+
+  & p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  @media (max-width: 1180px) {
+    width: 60vw;
+  }
+  @media (max-width: 780px) {
+    width: 85vw;
+  }
 `;
 
 export default App;

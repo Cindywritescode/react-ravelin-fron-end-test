@@ -27,8 +27,11 @@ const ClientRoll = styled.div`
   margin: 0 0 5em 0;
 
   & p {
-    margin-bottom: 2.5em;
+    margin: 2.5em 0;
     text-align: center;
+    color: #8E9097;
+    font-size: 1.1em;
+    font-weight: bold;
   }
 `;
 

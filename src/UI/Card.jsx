@@ -20,7 +20,11 @@ const CardBodyContainer = styled.div`
   flex: 1;
   
   & p {
-    font-size: 14px;
+    font-size: 0.77em;
+  }
+  
+  @media (max-width: 580px) {
+    font-size: 1em;
   }
 `;
 
@@ -64,6 +68,9 @@ const CardPrimary = styled.div`
   box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
   border-radius: 20px;
   padding: 32px 24px;
-
   
+  @media (max-width: 580px) {
+    margin: 3px 12px;
+    line-height: 1.5em;
+  }
 `;
