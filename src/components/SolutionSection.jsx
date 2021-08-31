@@ -77,5 +77,4 @@ const SolutionGrid = styled.div`
   @media (min-width: 1180px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
 `;

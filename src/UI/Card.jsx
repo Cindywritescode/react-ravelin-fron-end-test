@@ -28,14 +28,20 @@ const CardBodyContainer = styled.div`
   }
 `;
 
-export const CardFooter = styled.div`
-  & a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
+const CardPrimary = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  padding: 32px 24px;
+  
+  @media (max-width: 580px) {
+    margin: 3px 12px;
+    line-height: 1.5em;
   }
-`
+`;
 
 const BasicCardHeader = ({
   title,
@@ -60,17 +66,11 @@ export const CardHeader = styled(BasicCardHeader)`
   }
 `;
 
-const CardPrimary = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
-  border-radius: 20px;
-  padding: 32px 24px;
-  
-  @media (max-width: 580px) {
-    margin: 3px 12px;
-    line-height: 1.5em;
+export const CardFooter = styled.div`
+  & a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    font-weight: bold;
   }
-`;
+`
