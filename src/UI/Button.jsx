@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Button = () => (
-  <ButtonPrimary>View solutions</ButtonPrimary>
+export const Button = ({children}) => (
+  <ButtonPrimary>{children}</ButtonPrimary>
 )
 
 const ButtonPrimary = styled.button`
@@ -18,6 +18,7 @@ const ButtonPrimary = styled.button`
     background: white;
     color: #2A4AFC;
     border: 1px solid #2A4AFC;
+    font-weight: bold;
     margin: 0;
   }
 `
